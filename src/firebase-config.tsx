@@ -1,14 +1,11 @@
-import { initializeApp } from "firebase/app";
-import { getDatabase } from "firebase/database";
-import { config } from "dotenv";
-
-// set environment variables
-config();
+import { FirebaseApp, initializeApp } from "firebase/app";
+import { Auth, getAuth } from "firebase/auth";
+import { Database, getDatabase } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: process.env.FIREBASE_SVC_API_KEY,
+  apiKey: process.env.REACT_APP_FIREBASE_SVC_API_KEY,
   authDomain: "goal-manager-3e656.firebaseapp.com",
-  databaseURL: "https://goal-manager-3e656-default-rtdb.asia-southeast1.firebasedatabase.app",
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
   projectId: "goal-manager-3e656",
   storageBucket: "goal-manager-3e656.appspot.com",
   messagingSenderId: "108559446011",
@@ -17,5 +14,6 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const firebaseApp = initializeApp(firebaseConfig);
-export const database = getDatabase(firebaseApp);
+const firebaseApp: FirebaseApp = initializeApp(firebaseConfig);
+export const database: Database = getDatabase(firebaseApp);
+export const firebaseAuth: Auth = getAuth(firebaseApp);

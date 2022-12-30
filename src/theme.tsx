@@ -5,9 +5,9 @@ export const theme = createTheme({
   palette: {
     primary: {
       main: teal[500],
-    },
-    secondary: {
-      main: teal[700],
-    },
+      light: teal["A200"],
+      dark: teal[700],
+      contrastText: 'white'
+    }
   },
 });
