@@ -5,9 +5,11 @@ import { Container } from '@mui/material';
 import { theme } from './theme';
 import { ThemeProvider } from '@mui/material/styles';
 import * as firebaseConfig from './firebase-config';
+import { persistor } from './redux/store';
+import { PersistGate } from 'redux-persist/integration/react';
 import LoginPage from './components/LoginPage';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ProtectedRoute } from './components/ProtectedRoute';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 function App() {
 
@@ -34,7 +36,9 @@ function App() {
           justifyContent: "center",
         }}
       >
-        <RouterProvider router={router} />
+        <PersistGate loading={null} persistor={persistor} >
+          <RouterProvider router={router} />
+        </PersistGate>
       </Container>
     </ThemeProvider>
   );

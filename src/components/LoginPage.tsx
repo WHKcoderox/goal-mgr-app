@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Alert, Box, Button, Snackbar, Stack, Typography } from '@mui/material';
 import GoogleIcon from '@mui/icons-material/Google';
 import { firebaseAuth } from "../firebase-config";
