@@ -35,6 +35,7 @@ yarn-error.log*
 /build
 
 # misc
+/.firebase
 .DS_Store
 .env
 .env.local
