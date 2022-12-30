@@ -57,3 +57,7 @@ export interface AppStore {
   tasks: Task[];
   skills: MainSkill[];
 }
+
+export interface Props {
+  children: JSX.Element;
+}

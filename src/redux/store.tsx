@@ -18,7 +18,7 @@ const store = configureStore({
   reducer: persistReducer(persistConfig, rootReducer),
 });
 
-export type AppDispatch = typeof store.dispatch
+export type AppDispatch = typeof store.dispatch;
 export const useAppDispatch: () => AppDispatch = useDispatch;
 export const persistor: Persistor = persistStore(store);
 export default store;

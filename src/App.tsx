@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Container } from '@mui/material';
+import { CircularProgress, Container, CssBaseline } from '@mui/material';
 import { theme } from './theme';
 import { ThemeProvider } from '@mui/material/styles';
 import * as firebaseConfig from './firebase-config';
@@ -10,13 +10,14 @@ import { PersistGate } from 'redux-persist/integration/react';
 import LoginPage from './components/LoginPage';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import MainPage from './components/MainPage';
 
 function App() {
 
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <ProtectedRoute>children</ProtectedRoute>,
+      element: <ProtectedRoute><MainPage /></ProtectedRoute>,
     },
     {
       path: "/login",
@@ -30,13 +31,11 @@ function App() {
         maxWidth={false}
         sx={{
           backgroundColor: theme.palette.primary.dark,
-          height: "100vh",
-          display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <PersistGate loading={null} persistor={persistor} >
+        <PersistGate loading={<CircularProgress />} persistor={persistor} >
           <RouterProvider router={router} />
         </PersistGate>
       </Container>

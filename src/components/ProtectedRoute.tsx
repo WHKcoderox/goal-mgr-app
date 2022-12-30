@@ -1,13 +1,9 @@
-import React from "react";
 import { useSelector } from "react-redux";
 import { Navigate } from 'react-router-dom';
 import { selectUser } from "../redux/reducers/userSlice";
+import { Props } from "../types";
 
-interface ProtectedRouteParams {
-  children: React.ReactNode;
-}
-
-export const ProtectedRoute = ({ children }: ProtectedRouteParams) => {
+export const ProtectedRoute = ({ children }: Props) => {
   const user = useSelector(selectUser);
 
   console.log(user);
@@ -15,5 +11,5 @@ export const ProtectedRoute = ({ children }: ProtectedRouteParams) => {
     return <Navigate to="/login" />;
   }
 
-  return <>{children}</>;
+  return children;
 }

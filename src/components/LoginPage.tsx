@@ -51,6 +51,14 @@ const LoginPage = () => {
 
   return (
     <Box
+    sx = {{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: '100%',
+    }}
+    /*
       display="flex"
       justifyContent="center"
       alignItems="center"
@@ -59,7 +67,7 @@ const LoginPage = () => {
         borderRadius: "20px",
         padding: "5%",
         backgroundColor: "white",
-      }}
+      }}*/
     >
       <Stack spacing={2}>
         <Typography variant="h2" align="center">

@@ -1,4 +1,4 @@
-# Gamify goal management!
+# Gamify goal management with Goal Supremo!
 
 >## The idea:
 >> ### Every big skill is a slow refinement of its smaller subskills
