@@ -1,0 +1,46 @@
+[debug] [2022-12-30T00:31:43.999Z] ----------------------------------------------------------------------
+[debug] [2022-12-30T00:31:44.001Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2022-12-30T00:31:44.001Z] CLI Version:   11.19.0
+[debug] [2022-12-30T00:31:44.001Z] Platform:      linux
+[debug] [2022-12-30T00:31:44.001Z] Node Version:  v18.12.1
+[debug] [2022-12-30T00:31:44.002Z] Time:          Fri Dec 30 2022 00:31:44 GMT+0000 (Greenwich Mean Time)
+[debug] [2022-12-30T00:31:44.002Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-12-30T00:31:44.087Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-12-30T00:31:44.088Z] > authorizing via signed-in user (weehekun@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2022-12-30T00:31:44.093Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-12-30T00:31:44.101Z] [hub] writing locator at /tmp/hub-goal-manager-3e656.json
+[debug] [2022-12-30T00:31:44.114Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/goal-manager-3e656/sites 
+[debug] [2022-12-30T00:31:44.955Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/goal-manager-3e656/sites 200
+[debug] [2022-12-30T00:31:44.955Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/goal-manager-3e656/sites {"sites":[{"name":"projects/goal-manager-3e656/sites/goal-manager-3e656","defaultUrl":"https://goal-manager-3e656.web.app","appId":"1:108559446011:web:ee6b8a45d51eba9f9da55e","type":"DEFAULT_SITE"}]}
+[debug] [2022-12-30T00:31:44.955Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/goal-manager-3e656/webApps/1:108559446011:web:ee6b8a45d51eba9f9da55e/config [none]
+[debug] [2022-12-30T00:31:45.784Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/goal-manager-3e656/webApps/1:108559446011:web:ee6b8a45d51eba9f9da55e/config 200
+[debug] [2022-12-30T00:31:45.784Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/goal-manager-3e656/webApps/1:108559446011:web:ee6b8a45d51eba9f9da55e/config {"projectId":"goal-manager-3e656","appId":"1:108559446011:web:ee6b8a45d51eba9f9da55e","databaseURL":"https://goal-manager-3e656-default-rtdb.asia-southeast1.firebasedatabase.app","storageBucket":"goal-manager-3e656.appspot.com","apiKey":"AIzaSyCYlUxPlt3ec0KJID86C_nFN89aAO-yUd8","authDomain":"goal-manager-3e656.firebaseapp.com","messagingSenderId":"108559446011","measurementId":"G-7LEF8V7DY8"}
+[debug] [2022-12-30T00:31:45.788Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/goal-manager-3e656 [none]
+[debug] [2022-12-30T00:31:46.029Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/goal-manager-3e656 200
+[debug] [2022-12-30T00:31:46.029Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/goal-manager-3e656 {"projectId":"goal-manager-3e656","projectNumber":"108559446011","displayName":"goal-manager","name":"projects/goal-manager-3e656","resources":{"hostingSite":"goal-manager-3e656","realtimeDatabaseInstance":"goal-manager-3e656-default-rtdb"},"state":"ACTIVE","etag":"1_a88b4309-89e0-4bcc-9375-79196b945795"}
+[info] i  hosting[goal-manager-3e656]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] ✔  hosting[goal-manager-3e656]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[warn] ⚠  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5000 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:00:31:51 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:00:31:51 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:00:31:51 +0000] "GET /static/css/main.073c9b0a.css HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:00:31:51 +0000] \"GET /static/css/main.073c9b0a.css HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:00:31:51 +0000] "GET /static/js/main.43dc7d52.js HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:00:31:51 +0000] \"GET /static/js/main.43dc7d52.js HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:00:31:52 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:00:31:52 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:00:31:52 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:00:31:52 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54\""}}
+[info] i  hosting: 127.0.0.1 - - [30/Dec/2022:00:31:52 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://localhost:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [30/Dec/2022:00:31:52 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://localhost:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54\""}}
